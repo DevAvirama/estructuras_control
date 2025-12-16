@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13: Triángulos</title>
+    <link rel="stylesheet" href="assets/css/styles13.css">
+</head>
+<body>
+    <a href="index.html" class="btn-back">⬅ Volver al Menú</a>
+
+    <div class="triangle-card">
+        <div class="shape-icon">📐</div>
+        <h1>Clasificador de Triángulos</h1>
+        <p>Ingresa la longitud de los 3 lados</p>
+
+        <div class="input-row">
+            <input type="number" id="lado1" placeholder="Lado A" class="side-input">
+            <input type="number" id="lado2" placeholder="Lado B" class="side-input">
+            <input type="number" id="lado3" placeholder="Lado C" class="side-input">
+        </div>
+
+        <button onclick="clasificarTriangulo()">Identificar Tipo</button>
+
+        <div id="resultado" class="result-box"></div>
+    </div>
+
+    <script src="assets/js/main13.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+    background-color: #fceeb5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.btn-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s, background-color 0.2s;
+    font-size: 0.9rem;
+    z-index: 10;
+}
+
+.btn-back:hover {
+    transform: translateX(-3px);
+    background-color: #e9ecef;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 380px;
+    overflow: hidden;
+    border: 2px solid #e74c3c;
+}
+
+.header {
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.form-body {
+    padding: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #f1c40f;
+    color: #c0392b;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.1s;
+}
+
+button:hover {
+    background-color: #f39c12;
+    transform: scale(1.02);
+}
+
+.result-area {
+    padding: 20px;
+    background-color: #fff9e6;
+    border-top: 2px dashed #e74c3c;
+    font-family: 'Courier New', Courier, monospace;
+    display: none;
+}
+
+.line-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.total-line {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    color: #c0392b;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+@media (max-width: 500px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 80px;
+    }
+}

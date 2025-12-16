@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5: Fedepanela</title>
+    <link rel="stylesheet" href="assets/css/styles5.css">
+</head>
+<body>
+    <a href="index.html" class="btn-back">⬅ Volver al Menú</a>
+
+    <div class="panel-card">
+        <div class="header">
+            <h1>Fedepanela 🌾</h1>
+            <p>Liquidación de Pago a Productores</p>
+        </div>
+
+        <div class="form-content">
+            <div class="input-group">
+                <label for="precioBase">Precio Base por Kilo ($):</label>
+                <input type="number" id="precioBase" placeholder="Ej: 4000">
+            </div>
+
+            <div class="input-group">
+                <label for="kilos">Cantidad de Kilos:</label>
+                <input type="number" id="kilos" placeholder="Ej: 50">
+            </div>
+
+            <div class="row">
+                <div class="input-group half">
+                    <label for="tipo">Tipo de Panela:</label>
+                    <select id="tipo">
+                        <option value="P1">Tipo P1</option>
+                        <option value="P2">Tipo P2</option>
+                    </select>
+                </div>
+
+                <div class="input-group half">
+                    <label for="tamano">Tamaño:</label>
+                    <select id="tamano">
+                        <option value="1">Tamaño 1</option>
+                        <option value="2">Tamaño 2</option>
+                    </select>
+                </div>
+            </div>
+
+            <button onclick="calcularGanancia()">Calcular Pago</button>
+        </div>
+
+        <div id="resultado" class="result-box"></div>
+    </div>
+
+    <script src="assets/js/main5.js"></script>
+</body>
+</html>

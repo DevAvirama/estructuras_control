@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3: IN-N-OUT BURGER</title>
+    <link rel="stylesheet" href="assets/css/styles3.css">
+</head>
+<body>
+    <a href="index.html" class="btn-back">⬅ Volver al Menú</a>
+
+    <div class="card">
+        <div class="header">
+            <h1>IN-N-OUT BURGER 🍔</h1>
+            <p>Calculadora de Pedidos</p>
+        </div>
+        
+        <div class="form-body">
+            <div class="input-group">
+                <label for="cantidad">Número de Hamburguesas:</label>
+                <input type="number" id="cantidad" placeholder="Ej: 2" min="1">
+            </div>
+
+            <div class="input-group">
+                <label for="tipo">Tipo de Hamburguesa:</label>
+                <select id="tipo">
+                    <option value="sencilla">Sencilla ($20.000)</option>
+                    <option value="doble">Doble ($25.000)</option>
+                    <option value="triple">Triple ($28.000)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="pago">Forma de Pago:</label>
+                <select id="pago">
+                    <option value="efectivo">Efectivo (Sin recargo)</option>
+                    <option value="tarjeta">Tarjeta de Crédito (+7%)</option>
+                </select>
+            </div>
+
+            <button onclick="calcularPedido()">Generar Factura</button>
+        </div>
+
+        <div id="resultado" class="result-area"></div>
+    </div>
+
+    <script src="assets/js/main3.js"></script>
+</body>
+</html>

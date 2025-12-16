@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7: Nómina</title>
+    <link rel="stylesheet" href="assets/css/styles7.css">
+</head>
+<body>
+    <a href="index.html" class="btn-back">⬅ Volver al Menú</a>
+
+    <div class="payroll-card">
+        <div class="header">
+            <h1>Sistema de Nómina 💼</h1>
+            <p>Calculadora de Horas y Salarios</p>
+        </div>
+
+        <div class="form-body">
+            <div class="input-group">
+                <label for="horas">Horas Laboradas:</label>
+                <input type="number" id="horas" placeholder="Ej: 45" min="0">
+            </div>
+
+            <div class="input-group">
+                <label for="tarifa">Tarifa por Hora ($):</label>
+                <input type="number" id="tarifa" placeholder="Ej: 22000" min="0">
+            </div>
+
+            <button onclick="calcularSalario()">Calcular Salario</button>
+        </div>
+
+        <div id="resultado" class="result-box"></div>
+    </div>
+
+    <script src="assets/js/main7.js"></script>
+</body>
+</html>

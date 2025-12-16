@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9: Verificación de Llantas</title>
+    <link rel="stylesheet" href="assets/css/styles9.css">
+</head>
+<body>
+    <a href="index.html" class="btn-back">⬅ Volver al Menú</a>
+
+    <div class="tire-card">
+        <div class="header">
+            <div class="icon">🏎️</div>
+            <h1>Tire Master Check</h1>
+            <p>Sistema de Verificación de Neumáticos</p>
+        </div>
+
+        <div class="form-grid">
+            <div class="input-group">
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" placeholder="Ej: Michelin">
+            </div>
+
+            <div class="input-group">
+                <label for="tipo">Tipo:</label>
+                <select id="tipo">
+                    <option value="estandar">Estándar</option>
+                    <option value="deportiva">Deportiva</option>
+                    <option value="todo-terreno">Todo Terreno</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="diametro">Diámetro (m):</label>
+                <input type="number" id="diametro" placeholder="Ej: 1.5" step="0.1">
+            </div>
+
+            <div class="input-group">
+                <label for="grosor">Grosor (m):</label>
+                <input type="number" id="grosor" placeholder="Ej: 0.5" step="0.01">
+            </div>
+        </div>
+
+        <button onclick="verificarLlanta()">Realizar Diagnóstico</button>
+
+        <div id="resultado" class="result-box"></div>
+    </div>
+
+    <script src="assets/js/main9.js"></script>
+</body>
+</html>
